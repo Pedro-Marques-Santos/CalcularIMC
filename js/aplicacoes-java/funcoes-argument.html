@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript</title>
+
+
+  <script>
+    function soma() {
+      var resultado = 0
+      for (var i in arguments) {
+       // console.log(arguments[i]) //retorna um array com parametros das funções
+      resultado += arguments[i]
+      }
+      return resultado
+    }
+
+    console.log(soma(7, 5, 3.2, 'Texto'))
+  </script>
+
+</head>
+
+<body>
+</body>
+
+</html>

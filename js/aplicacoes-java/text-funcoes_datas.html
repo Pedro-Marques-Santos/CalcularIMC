@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript</title>
+
+    <script>
+        
+        //15/01/2017  até  23/02/2017
+
+        var data1 = new Date( 2017, 0, 15 )
+        var data2 = new Date( 2017, 1, 23 )
+
+        data1MiliSegundos = data1.getTime()
+        data2MiliSegundos = data2.getTime()
+
+        var dataSegundos = (data2MiliSegundos - data1MiliSegundos)
+
+        var totalDias = Math.ceil( dataSegundos / 86400000 )
+
+        document.write( totalDias )
+        
+
+    </script>
+  </head>
+
+  <body>
+    
+  </body>
+</html>

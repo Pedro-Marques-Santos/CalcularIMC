@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>IMC</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/perfil.css">
+
+    <script src="https://kit.fontawesome.com/b2fac55e1b.js" crossorigin="anonymous"></script>
+    <script src="js/confg.js"></script>
+
+    <title>IMC</title>
+  </head>
+  <body onload="carregarImc()">
+    
+    <section id="secao-total">
+      <div class="container d-flex align-items-center">
+          <div class="row">
+            <div class="col-md-6 cor-explica-imc" id="explicaimc">
+              <div class="display-1" id="resultadoimc">Ainda não sabe qual o seu Índice de Massa Corporal (IMC)? </div>
+              <div class="resultadoImc"  id="elementoPaiResultado"></div>
+              <div class="lead" id="removeTextoimc">Faça o cálculo aqui mesmo e conheça mais sobre o seu corpo.</div>
+              <div id="adicionarButtonSalvar"></div>
+            </div>
+            <div class="col-md-6 cor-calcula-imc text-justify">
+              <h1>Para calcular o IMC (Índice de Massa Corporal), adicione os valores abaixo.</h1>
+              <input id="altura" class="form-calculo" type="text" placeholder="Altura" aria-label="default input example">
+              <input id="peso" class="form-calculo" type="text" placeholder="Peso(kg)" aria-label="default input example">
+              <div><button type="button" class="btn btn-outline-light m-button-calcular" onclick="calcularImc()">Calcular</button></div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <ul class="list-group" id="lista2">
+          <li class="list-group-item d-flex justify-content-between align-items-center">
+            <div class="font-weight-bold">Valores</div>
+            <span class="badge font-weight-bold tamanho-font-lista">Deletar IMC</span>
+          </li>
+        </ul>
+      </div>
+      <div class="teste"></div>
+    </section>
+    
+
+    <div class="modal" tabindex="-1" id="modal-erro">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-frase-1-erro"></h5>
+          </div>
+          <div class="modal-body">
+            <p id="modal-frase-2-erro"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" data-dismiss="modal" onclick="voltarButton()">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
